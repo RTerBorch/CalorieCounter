@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LivsmedelDataset xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Version>2023-06-13T09:22:47.91</Version>
+    <LivsmedelsLista>
+        <Livsmedel>
+            <Nummer>1</Nummer>
+            <Namn>Nöt talg</Namn>
+            <ViktGram>100</ViktGram>
+            <Huvudgrupp>Övrigt fett (ister, talg, kokosfett)</Huvudgrupp>
+            <Naringsvarden>
+                <Naringsvarde>
+                    <Namn>Summa mättade fettsyror</Namn>
+                    <Forkortning>Mfet</Forkortning>
+                    <Varde>35,8</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:10:08.47</SenastAndrad>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Summa enkelomättade fettsyror</Namn>
+                    <Forkortning>Mone</Forkortning>
+                    <Varde>28,8</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:10:08.47</SenastAndrad>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Summa fleromättade fettsyror</Namn>
+                    <Forkortning>Pole</Forkortning>
+                    <Varde>2,8</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:10:08.47</SenastAndrad>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Fett</Namn>
+                    <Forkortning>Fett</Forkortning>
+                    <Varde>71,00</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:10:08.47</SenastAndrad>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Protein</Namn>
+                    <Forkortning>Prot</Forkortning>
+                    <Varde>2,8</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2010-02-01T15:23:17.97</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Fettsyra 4:0-10:0</Namn>
+                    <Forkortning>C4:0-C10:0</Forkortning>
+                    <Varde>0,00</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:10:08.47</SenastAndrad>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Laurinsyra C12:0</Namn>
+                    <Forkortning>C12:0</Forkortning>
+                    <Varde>0,07</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:10:08.47</SenastAndrad>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Myristinsyra C14:0</Namn>
+                    <Forkortning>C14:0</Forkortning>
+                    <Varde>3,17</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:10:08.47</SenastAndrad>
+                </Naringsvarde>
+            </Naringsvarden>
+        </Livsmedel>
+        <Livsmedel>
+            <Nummer>2</Nummer>
+            <Namn>Gris späck</Namn>
+            <ViktGram>100</ViktGram>
+            <Huvudgrupp>Övrigt fett (ister, talg, kokosfett)</Huvudgrupp>
+            <Naringsvarden>
+                <Naringsvarde>
+                    <Namn>Summa mättade fettsyror</Namn>
+                    <Forkortning>Mfet</Forkortning>
+                    <Varde>32,8</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Summa enkelomättade fettsyror</Namn>
+                    <Forkortning>Mone</Forkortning>
+                    <Varde>38,5</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Summa fleromättade fettsyror</Namn>
+                    <Forkortning>Pole</Forkortning>
+                    <Varde>9,0</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Fettsyra 4:0-10:0</Namn>
+                    <Forkortning>C4:0-C10:0</Forkortning>
+                    <Varde>0,00</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Laurinsyra C12:0</Namn>
+                    <Forkortning>C12:0</Forkortning>
+                    <Varde>0,08</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Myristinsyra C14:0</Namn>
+                    <Forkortning>C14:0</Forkortning>
+                    <Varde>1,05</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Palmitinsyra C16:0</Namn>
+                    <Forkortning>C16:0</Forkortning>
+                    <Varde>20,70</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Stearinsyra C18:0</Namn>
+                    <Forkortning>C18:0</Forkortning>
+                    <Varde>10,60</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Arakidinsyra C20:0</Namn>
+                    <Forkortning>C20:0</Forkortning>
+                    <Varde>0,24</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Palmitoljesyra C16:1</Namn>
+                    <Forkortning>C16:1</Forkortning>
+                    <Varde>2,34</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Oljesyra C18:1</Namn>
+                    <Forkortning>C18:1</Forkortning>
+                    <Varde>35,20</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Linolsyra C18:2</Namn>
+                    <Forkortning>C18:2</Forkortning>
+                    <Varde>7,82</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Linolensyra C18:3</Namn>
+                    <Forkortning>C18:3</Forkortning>
+                    <Varde>0,73</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Arakidonsyra C20:4</Namn>
+                    <Forkortning>C20:4</Forkortning>
+                    <Varde>0,00</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>EPA (C20:5)</Namn>
+                    <Forkortning>C20:5</Forkortning>
+                    <Varde>0,00</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>DPA (C22:5)</Namn>
+                    <Forkortning>C22:5</Forkortning>
+                    <Varde>0,00</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>DHA (C22:6)</Namn>
+                    <Forkortning>C22:6</Forkortning>
+                    <Varde>0,00</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Kolesterol</Namn>
+                    <Forkortning>Kole</Forkortning>
+                    <Varde>57,0</Varde>
+                    <Enhet>mg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Monosackarider</Namn>
+                    <Forkortning>Msac</Forkortning>
+                    <Varde>0,0</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2017-03-01T10:01:36.42</SenastAndrad>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Disackarider</Namn>
+                    <Forkortning>Dsac</Forkortning>
+                    <Varde>0,0</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2017-03-01T10:01:36.42</SenastAndrad>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Sackaros</Namn>
+                    <Forkortning>Sack</Forkortning>
+                    <Varde>0,0</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2017-03-01T10:01:36.42</SenastAndrad>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Energi (kJ)</Namn>
+                    <Forkortning>Ener</Forkortning>
+                    <Varde>3 193</Varde>
+                    <Enhet>kJ</Enhet>
+                    <SenastAndrad>2010-02-01T15:23:17.97</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Energi (kcal)</Namn>
+                    <Forkortning>Ener</Forkortning>
+                    <Varde>763</Varde>
+                    <Enhet>kcal</Enhet>
+                    <SenastAndrad>2010-02-01T15:23:17.97</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Aska</Namn>
+                    <Forkortning>Aska</Forkortning>
+                    <Varde>0,7</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2010-02-01T15:23:17.97</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Vatten</Namn>
+                    <Forkortning>Vatt</Forkortning>
+                    <Varde>11,1</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2010-02-01T15:23:17.97</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Avfall (skal etc.)</Namn>
+                    <Forkortning>Avfa</Forkortning>
+                    <Varde>0,0</Varde>
+                    <Enhet>%</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV livsmedelstabell energi och näringsämnen 2002</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                    <Referenstyp>Rapport</Referenstyp>
+                    <Kommentar>5386 Gris späck</Kommentar>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Kolhydrater</Namn>
+                    <Forkortning>Kolh</Forkortning>
+                    <Varde>0,0</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2010-02-01T15:23:17.97</SenastAndrad>
+                    <Vardetyp>Logisk nolla</Vardetyp>
+                    <Ursprung>Annat ursprung</Ursprung>
+                    <Publikation>SLV - Riktlinjer för livsmedel</Publikation>
+                    <Framtagningsmetod>Skattat värde</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Protein</Namn>
+                    <Forkortning>Prot</Forkortning>
+                    <Varde>2,8</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2010-02-01T15:23:17.97</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Alkohol</Namn>
+                    <Forkortning>Alko</Forkortning>
+                    <Varde>0,00</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2010-02-01T15:23:17.97</SenastAndrad>
+                    <Vardetyp>Logisk nolla</Vardetyp>
+                    <Ursprung>Annat ursprung</Ursprung>
+                    <Publikation>SLV - Riktlinjer för livsmedel</Publikation>
+                    <Framtagningsmetod>Skattat logisk slutledning</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Fibrer</Namn>
+                    <Forkortning>Fibe</Forkortning>
+                    <Varde>0,0</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2010-02-01T15:23:17.97</SenastAndrad>
+                    <Vardetyp>Logisk nolla</Vardetyp>
+                    <Ursprung>Annat ursprung</Ursprung>
+                    <Publikation>SLV - Riktlinjer för livsmedel</Publikation>
+                    <Framtagningsmetod>Skattat logisk slutledning</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Fett</Namn>
+                    <Forkortning>Fett</Forkortning>
+                    <Varde>85,00</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2010-02-01T15:23:17.97</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Fosfor</Namn>
+                    <Forkortning>P</Forkortning>
+                    <Varde>26</Varde>
+                    <Enhet>mg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Jod</Namn>
+                    <Forkortning>I</Forkortning>
+                    <Varde>0,00</Varde>
+                    <Enhet>µg</Enhet>
+                    <SenastAndrad>2023-04-05T07:24:43.757</SenastAndrad>
+                    <Vardetyp>Ett analysvärde från ett livsmedelsprov</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>Standard tables of food composition in Japan 2015 (Seventh revised edition)
+                    </Publikation>
+                    <Metodtyp>ICP-MS</Metodtyp>
+                    <Framtagningsmetod>Analysresultat</Framtagningsmetod>
+                    <Referenstyp>Fil eller databas</Referenstyp>
+                    <Kommentar>Food ID: 14016 Lard</Kommentar>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Järn</Namn>
+                    <Forkortning>Fe</Forkortning>
+                    <Varde>0,20</Varde>
+                    <Enhet>mg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Kalcium</Namn>
+                    <Forkortning>Ca</Forkortning>
+                    <Varde>4,00</Varde>
+                    <Enhet>mg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Kalium</Namn>
+                    <Forkortning>K</Forkortning>
+                    <Varde>65</Varde>
+                    <Enhet>mg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Magnesium</Namn>
+                    <Forkortning>Mg</Forkortning>
+                    <Varde>1,00</Varde>
+                    <Enhet>mg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Natrium</Namn>
+                    <Forkortning>Na</Forkortning>
+                    <Varde>11</Varde>
+                    <Enhet>mg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Selen</Namn>
+                    <Forkortning>Se</Forkortning>
+                    <Varde>5,00</Varde>
+                    <Enhet>µg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Zink</Namn>
+                    <Forkortning>Zn</Forkortning>
+                    <Varde>0,400</Varde>
+                    <Enhet>mg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Vitamin A</Namn>
+                    <Forkortning>VitA</Forkortning>
+                    <Varde>4,0</Varde>
+                    <Enhet>RE/µg</Enhet>
+                    <SenastAndrad>2010-02-01T15:23:17.97</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Retinol</Namn>
+                    <Forkortning>Reti</Forkortning>
+                    <Varde>4,0</Varde>
+                    <Enhet>µg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Vitamin D</Namn>
+                    <Forkortning>VitD</Forkortning>
+                    <Varde>0,60</Varde>
+                    <Enhet>µg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Vitamin E</Namn>
+                    <Forkortning>VitE</Forkortning>
+                    <Varde>0,70</Varde>
+                    <Enhet>mg</Enhet>
+                    <SenastAndrad>2010-02-01T15:23:17.97</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>β-Karoten</Namn>
+                    <Forkortning>b-Kar</Forkortning>
+                    <Varde>0,0</Varde>
+                    <Enhet>µg</Enhet>
+                    <SenastAndrad>2006-08-15T10:04:33.763</SenastAndrad>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Tiamin</Namn>
+                    <Forkortning>Tiam</Forkortning>
+                    <Varde>0,05</Varde>
+                    <Enhet>mg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Riboflavin</Namn>
+                    <Forkortning>Ribo</Forkortning>
+                    <Varde>0,07</Varde>
+                    <Enhet>mg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Vitamin C</Namn>
+                    <Forkortning>VitC</Forkortning>
+                    <Varde>0,0</Varde>
+                    <Enhet>mg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Logisk nolla</Vardetyp>
+                    <Ursprung>Annat ursprung</Ursprung>
+                    <Publikation>SLV - Riktlinjer för livsmedel</Publikation>
+                    <Framtagningsmetod>Skattat logisk slutledning</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Niacin</Namn>
+                    <Forkortning>Niac</Forkortning>
+                    <Varde>0,50</Varde>
+                    <Enhet>mg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Niacinekvivalenter</Namn>
+                    <Forkortning>Niek</Forkortning>
+                    <Varde>1,01</Varde>
+                    <Enhet>NE/mg</Enhet>
+                    <SenastAndrad>2022-12-12T10:17:01.34</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Värde framtaget med eget system</Ursprung>
+                    <Publikation>SLV - Riktlinjer för livsmedel</Publikation>
+                    <Metodtyp>Niacinekvivalenter</Metodtyp>
+                    <Framtagningsmetod>Beräknad, omräkningsfaktor inkluderad</Framtagningsmetod>
+                    <Referenstyp>Rapport</Referenstyp>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Vitamin B12</Namn>
+                    <Forkortning>VitB12</Forkortning>
+                    <Varde>0,60</Varde>
+                    <Enhet>µg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Vitamin B6</Namn>
+                    <Forkortning>VitB6</Forkortning>
+                    <Varde>0,02</Varde>
+                    <Enhet>mg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Folat</Namn>
+                    <Forkortning>Folat</Forkortning>
+                    <Varde>1,0</Varde>
+                    <Enhet>µg</Enhet>
+                    <SenastAndrad>2006-01-09T14:02:41.247</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Livsmedelstabell</Ursprung>
+                    <Publikation>SLV&lt; eller1986</Publikation>
+                    <Framtagningsmetod>Överfört från likvärdigt livsmedel</Framtagningsmetod>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Socker totalt</Namn>
+                    <Forkortning>Mono/disack</Forkortning>
+                    <Varde>0,0</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2017-03-01T10:01:36.42</SenastAndrad>
+                    <Vardetyp>Logisk nolla</Vardetyp>
+                    <Ursprung>Annat ursprung</Ursprung>
+                    <Publikation>SLV - Riktlinjer för livsmedel</Publikation>
+                    <Metodtyp>Skattat från ingrediensförteckning</Metodtyp>
+                    <Framtagningsmetod>Skattat logisk slutledning</Framtagningsmetod>
+                    <Referenstyp>Rapport</Referenstyp>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Fullkorn totalt</Namn>
+                    <Forkortning>Fullk/tot</Forkortning>
+                    <Varde>0</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2022-12-12T10:17:01.34</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Värde framtaget med eget system</Ursprung>
+                    <Publikation>SLV - Riktlinjer för livsmedel</Publikation>
+                    <Metodtyp>Skattat från ingrediensförteckning</Metodtyp>
+                    <Framtagningsmetod>Summering av beståndsdelar</Framtagningsmetod>
+                    <Referenstyp>Rapport</Referenstyp>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Salt</Namn>
+                    <Forkortning>NaCl</Forkortning>
+                    <Varde>0,0</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2022-12-12T10:17:01.34</SenastAndrad>
+                    <Vardetyp>Bästa skattning</Vardetyp>
+                    <Ursprung>Värde framtaget med eget system</Ursprung>
+                    <Publikation>SLV - Riktlinjer för livsmedel</Publikation>
+                    <Metodtyp>Salt beräknat från natrium (totalt)</Metodtyp>
+                    <Framtagningsmetod>Beräknad, omräkningsfaktor inkluderad</Framtagningsmetod>
+                    <Referenstyp>Rapport</Referenstyp>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Tillsatt socker</Namn>
+                    <Forkortning>Socker/t</Forkortning>
+                    <Varde>0</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2020-09-10T11:09:07.847</SenastAndrad>
+                    <Vardetyp>Logisk nolla</Vardetyp>
+                    <Ursprung>Värde framtaget med eget system</Ursprung>
+                    <Publikation>SLV - Riktlinjer för livsmedel</Publikation>
+                    <Framtagningsmetod>Skattat logisk slutledning</Framtagningsmetod>
+                    <Referenstyp>Rapport</Referenstyp>
+                </Naringsvarde>
+                <Naringsvarde>
+                    <Namn>Fritt socker</Namn>
+                    <Forkortning>Socker/f</Forkortning>
+                    <Varde>0</Varde>
+                    <Enhet>g</Enhet>
+                    <SenastAndrad>2020-09-10T11:09:07.847</SenastAndrad>
+                    <Vardetyp>Logisk nolla</Vardetyp>
+                    <Ursprung>Värde framtaget med eget system</Ursprung>
+                    <Publikation>SLV - Riktlinjer för livsmedel</Publikation>
+                    <Framtagningsmetod>Skattat logisk slutledning</Framtagningsmetod>
+                    <Referenstyp>Rapport</Referenstyp>
+                </Naringsvarde>
+            </Naringsvarden>
+        </Livsmedel>
+    </LivsmedelsLista>
