@@ -1,5 +1,7 @@
 package com.CalorieCounter.CalorieCounter.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import lombok.AllArgsConstructor;
@@ -17,8 +19,10 @@ public class Naringsvarde {
     private Double varde;
     private String enhet;
 
+
     @ManyToOne
     @JoinColumn(name= "livsmedel_id")
+    @JsonIgnore
     private Livsmedel livsmedel;
 
     public Naringsvarde(String namn, Double varde, String enhet, Livsmedel livsmedel) {

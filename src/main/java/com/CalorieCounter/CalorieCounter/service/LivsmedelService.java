@@ -22,8 +22,10 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class LivsmedelService {
@@ -129,6 +131,35 @@ public class LivsmedelService {
             throw new RuntimeException(e);
         }
     }
+
+
+    // Search LivsmedelDB with relevant returns. String search -> Exact match > Start with > Contains
+    public List<Livsmedel> searchLivsmedel(String search) {
+        String lowerSearch = search.toLowerCase();
+
+        return livsmedelRepository.findAll().stream()
+                .filter(livsmedel -> livsmedel.getNamn().toLowerCase().contains(lowerSearch))
+                .sorted(Comparator.comparing((Livsmedel livsmedel) -> !livsmedel.getNamn().equalsIgnoreCase(search))
+                        .thenComparing(livsmedel -> !livsmedel.getNamn().toLowerCase().startsWith(lowerSearch))
+                        .thenComparing(Livsmedel::getNamn))
+                .collect(Collectors.toList());
+    }
+
+
+
+    /*
+
+    public List<Livsmedel> searchLivsmedel(String search){
+      return  livsmedelRepository.findAll().stream().toList().stream().filter(livsmedel -> livsmedel.getNamn().contains(search.toLowerCase())).toList();
+    }
+
+     */
+
+    public List<Livsmedel> allLivsMedel(){
+        return livsmedelRepository.findAll().stream().toList();
+    }
+
+
 
 
 }

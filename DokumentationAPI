@@ -1,0 +1,23 @@
+https://www.livsmedelsverket.se/livsmedel-och-innehall/naringsamne/livsmedelsdatabasen/uppdateringar - Version 20230613
+
+Här är en kort förklaring av varje mapp:
+
+    controller/: Här lägger du dina controller-klasser, som hanterar HTTP-förfrågningar och svar.
+
+    model/: Här placerar du dina modellklasser (Livsmedel, Naringsvarde, etc.) som representerar dina dataobjekt.
+
+    repository/: Om du använder JPA (Java Persistence API) för databasinteraktion, så skulle denna mapp innehålla dina repository-klasser.
+
+    service/: Här lägger du dina service-klasser (LivsmedelService, etc.), vilka innehåller din affärslogik och anropar repository-klasser eller externa tjänster som Livsmedel API.
+
+    util/: Denna mapp kan användas för att lagra olika hjälpklasser eller utilitetsfunktioner som du kan behöva.
+
+    resources/static/: För att lagra statiska resurser som bilder, JS, CSS, etc.
+
+    resources/templates/: Om du använder en template-motor som Thymeleaf, så skulle dina HTML-templates gå här.
+
+    resources/application.properties: Konfigurationsinställningar för din Spring Boot-applikation.
+
+    test/: Här lägger du all din testkod.
+
+    pom.xml: Maven-konfigurationsfil för att hantera projektets beroenden.
