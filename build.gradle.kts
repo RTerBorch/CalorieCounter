@@ -34,6 +34,15 @@ dependencies {
 // https://mvnrepository.com/artifact/org.projectlombok/lombok
     compileOnly("org.projectlombok:lombok:1.18.28")
 
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
+    implementation("org.springframework.boot:spring-boot-starter-security:3.1.3")
+
+    // https://mvnrepository.com/artifact/org.springframework.security/spring-security-test
+    testImplementation("org.springframework.security:spring-security-test:6.1.3")
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+    implementation("org.springframework.boot:spring-boot-starter-web:3.1.3")
+
 
 }
 
