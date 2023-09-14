@@ -13,16 +13,12 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 public class SecurityConfig {
 
+    //https://github.com/nackad-code/spring-boot-login-form/blob/main/src/main/java/com/example/login/SecurityConfig.java
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests((request ) -> request
                         .requestMatchers("/","login").permitAll()
-
-
-
-
-
                         .antMatchers("/admin/**").hasRole("ADMIN")
                         .antMatchers("/user/**").hasRole("USER")
                         .anyRequest().authenticated()
