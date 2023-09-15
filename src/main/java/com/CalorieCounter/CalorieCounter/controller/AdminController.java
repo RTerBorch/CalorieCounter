@@ -2,6 +2,8 @@ package com.CalorieCounter.CalorieCounter.controller;
 
 
 import com.CalorieCounter.CalorieCounter.model.Account;
+import com.CalorieCounter.CalorieCounter.service.LivsmedelService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,10 +12,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/admin")
 public class AdminController {
 
+    @Autowired
+    private LivsmedelService livsmedelService;
+
 
     @PostMapping("/addAccount")
     public String addUser(){
         return "user added";
+    }
+
+    @RequestMapping("/updateDB")
+    public String updateDatabase() {
+        livsmedelService.UpdateDB(false);
+        return "Database updated successfully.";
     }
 
 }

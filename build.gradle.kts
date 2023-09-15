@@ -43,6 +43,9 @@ dependencies {
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
     implementation("org.springframework.boot:spring-boot-starter-web:3.1.3")
 
+    // https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api
+    implementation("javax.annotation:javax.annotation-api:1.3.2")
+
 
 }
 

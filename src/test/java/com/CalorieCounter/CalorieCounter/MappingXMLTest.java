@@ -1,7 +1,6 @@
 package com.CalorieCounter.CalorieCounter;
 
 
-import com.CalorieCounter.CalorieCounter.tools.Utilities;
 import org.junit.jupiter.api.Test;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
