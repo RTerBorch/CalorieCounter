@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @Entity
 public class Account {
@@ -17,6 +19,11 @@ public class Account {
     private String username;
     private String password;
     private String role;
+
+    @ManyToMany
+    private List<Recept> receptList;
+
+
 
     public Account(Long id, String username, String password, String role) {
         this.id = id;

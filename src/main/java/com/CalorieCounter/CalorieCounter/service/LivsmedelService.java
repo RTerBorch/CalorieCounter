@@ -1,10 +1,8 @@
 package com.CalorieCounter.CalorieCounter.service;
 
 import com.CalorieCounter.CalorieCounter.model.Livsmedel;
-import com.CalorieCounter.CalorieCounter.model.LivsmedelDataset;
 import com.CalorieCounter.CalorieCounter.model.Naringsvarde;
 import com.CalorieCounter.CalorieCounter.repository.LivsmedelRepository;
-import com.CalorieCounter.CalorieCounter.repository.NaringsvardeRepository;
 
 
 import org.springframework.stereotype.Service;

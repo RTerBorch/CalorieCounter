@@ -28,12 +28,14 @@ public class SecurityConfig {
         http.authorizeHttpRequests(r -> r
                 //.requestMatchers("/error").permitAll()
                 .requestMatchers("/").hasAnyRole("ADMIN", "USER")
+                .requestMatchers("/recipe/**").hasAnyRole("ADMIN", "USER")
                 .requestMatchers("/admin/**").hasRole("ADMIN")
         );
 
 
         //Using Basic Auth just for simplicity for now.
         http.httpBasic(withDefaults());
+        http.csrf().disable();
 
         //Disable csrf if needed for testing, should never be disabled in production.
         //http.csrf(AbstractHttpConfigurer::disable);

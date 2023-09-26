@@ -1,5 +1,6 @@
 package com.CalorieCounter.CalorieCounter.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -8,7 +9,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-
+@Data
 @Entity
 public class Livsmedel {
 
@@ -21,6 +22,10 @@ public class Livsmedel {
 
     @OneToMany(mappedBy = "livsmedel", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Naringsvarde> naringsvarden;
+
+    @ManyToMany(mappedBy = "ingredients")
+    @JsonIgnore
+    private List<Recept> recipes;
 
 
     public Livsmedel(Long id, String namn, int viktGram, List<Naringsvarde> naringsvarden) {

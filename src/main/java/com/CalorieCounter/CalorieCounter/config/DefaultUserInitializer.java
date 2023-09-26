@@ -6,9 +6,6 @@ import com.CalorieCounter.CalorieCounter.repository.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
-
-
-
 import javax.annotation.PostConstruct;
 
 @Configuration
@@ -27,7 +24,7 @@ public class DefaultUserInitializer {
         }
 
         // Check if a default user already exists
-        if (accountRepository.findByUsername("defaultUser").isEmpty()) {
+        if (accountRepository.findByUsername("user").isEmpty()) {
             // Create a new default user
             Account defaultUser = new Account(null, "user", "$2a$10$WYbfVpShvv0WHspIisedI.FVJHeQ0JuJhGRa778u/jzMuvcqoD3B6", "USER");
             accountRepository.save(defaultUser);

@@ -18,8 +18,7 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("org.projectlombok:lombok:1.18.22")
-    implementation("org.projectlombok:lombok:1.18.22")
+    implementation("org.projectlombok:lombok:1.18.26")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 
     // https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
@@ -45,6 +44,10 @@ dependencies {
 
     // https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api
     implementation("javax.annotation:javax.annotation-api:1.3.2")
+
+    // https://mvnrepository.com/artifact/com.h2database/h2
+    testImplementation("com.h2database:h2:2.2.224")
+
 
 
 }
