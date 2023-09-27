@@ -16,7 +16,7 @@ INSERT INTO naringsvarde (id, namn, varde, enhet, livsmedel_id) VALUES (5, 'prot
 INSERT INTO naringsvarde (id, namn, varde, enhet, livsmedel_id) VALUES (6, 'kolhydrater', 99, 'g', 2);
 
 -- Populating the join tables
-INSERT INTO account_recept_list (accounts_id, recept_list_id) VALUES (1,1);
+INSERT INTO account_recept_list(accounts_id, recept_list_id) VALUES (1,1);
 INSERT INTO account_recept_list (accounts_id, recept_list_id) VALUES (1,2);
 INSERT INTO account_recept_list (accounts_id, recept_list_id) VALUES (2,1);
 

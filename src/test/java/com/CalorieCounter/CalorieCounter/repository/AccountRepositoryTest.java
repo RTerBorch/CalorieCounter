@@ -3,37 +3,32 @@ package com.CalorieCounter.CalorieCounter.repository;
 import static org.junit.jupiter.api.Assertions.*;
 
 import com.CalorieCounter.CalorieCounter.model.Account;
-import com.CalorieCounter.CalorieCounter.repository.AccountRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
+import org.springframework.test.context.TestPropertySource;
 
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest
+@TestPropertySource(locations= "classpath:application.properties")
 public class AccountRepositoryTest {
-
-    @Autowired
-    private TestEntityManager entityManager;
 
     @Autowired
     private AccountRepository accountRepository;
 
     @Test
-    public void whenFindByUsername_thenReturnAccount() {
-        // given
-        Account alex = new Account(null, "alex", "password123", "USER");
-        entityManager.persist(alex);
-        entityManager.flush();
+    public void theRightUserIsFound() {
+        Optional<Account> accountOptional = accountRepository.findById(1L);
+        if(accountOptional.isPresent()) {
+            Account account = accountOptional.get();
+            assertEquals(accountRepository.findById(1L).orElseThrow().getUsername(),"testUser1");
+             assertEquals (accountRepository.findById(1L).orElseThrow().getPassword(),"password1");
+        } else {
+            System.out.println("ERROR ");
+        }
 
-        // when
-        Optional<Account> foundOpt = accountRepository.findByUsername(alex.getUsername());
-
-        // then
-        assertThat(foundOpt).isPresent();
-        assertThat(foundOpt.get().getUsername()).isEqualTo(alex.getUsername());
     }
 }

@@ -3,7 +3,7 @@ CREATE TABLE livsmedel
 (
     id       BIGINT PRIMARY KEY,
     namn     VARCHAR(255),
-    viktGram INT
+    vikt_gram INT
 );
 
 -- Creating table for Naringsvarde
@@ -34,21 +34,21 @@ CREATE TABLE recept
 );
 
 -- Creating join table for Account and Recept (ManyToMany relationship)
-CREATE TABLE account_recept
+CREATE TABLE account_recept_list
 (
-    account_id BIGINT,
-    recept_id  BIGINT,
-    PRIMARY KEY (account_id, recept_id),
-    FOREIGN KEY (account_id) REFERENCES account (id),
-    FOREIGN KEY (recept_id) REFERENCES recept (id)
+    accounts_id BIGINT,
+    recept_list_id  BIGINT,
+    PRIMARY KEY (accounts_id, recept_list_id),
+    FOREIGN KEY (accounts_id) REFERENCES account (id),
+    FOREIGN KEY (recept_list_id) REFERENCES recept (id)
 );
 
 -- Creating join table for Recept and Livsmedel (ManyToMany relationship)
-CREATE TABLE recept_livsmedel
+CREATE TABLE recept_ingredients
 (
-    recept_id    BIGINT,
-    livsmedel_id BIGINT,
-    PRIMARY KEY (recept_id, livsmedel_id),
-    FOREIGN KEY (recept_id) REFERENCES recept (id),
-    FOREIGN KEY (livsmedel_id) REFERENCES livsmedel (id)
+    recipes_id    BIGINT,
+    ingredients_id BIGINT,
+    PRIMARY KEY (recipes_id, ingredients_id),
+    FOREIGN KEY (recipes_id) REFERENCES recept (id),
+    FOREIGN KEY (ingredients_id) REFERENCES livsmedel (id)
 );
