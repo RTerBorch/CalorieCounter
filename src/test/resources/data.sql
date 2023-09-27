@@ -1,5 +1,5 @@
-INSERT INTO Account (id, password, role, username) VALUES (1, 'password1','ADMIN','testUser1');
-INSERT INTO Account (id, password, role, username) VALUES (2, 'password2','USER','testUser2');
+INSERT INTO account (id, password, role, username) VALUES (1, 'password1','ADMIN','testUser1');
+INSERT INTO account (id, password, role, username) VALUES (2, 'password2','USER','testUser2');
 INSERT INTO recept  (id, namn) VALUES (1,'lasagne');
 INSERT INTO recept  (id, namn) VALUES (2,'bolognese');
 INSERT INTO livsmedel (id, namn, vikt_gram) VALUES (1, 'pasta', 150);
