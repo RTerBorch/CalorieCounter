@@ -1,8 +1,11 @@
+import org.gradle.internal.impldep.org.eclipse.jgit.lib.ObjectChecker.type
+import org.gradle.internal.impldep.org.fusesource.jansi.AnsiRenderer.test
+
 plugins {
     java
     id("org.springframework.boot") version "3.1.3"
     id("io.spring.dependency-management") version "1.1.3"
-
+    id("jacoco")
 }
 
 group = "com.CalorieCounter"
@@ -26,9 +29,9 @@ dependencies {
     implementation("com.mysql:mysql-connector-j:8.1.0")
 
     // https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api
-    implementation("javax.xml.bind:jaxb-api:2.3.1")
-    implementation("com.sun.xml.bind:jaxb-core:2.3.0.1")
-    implementation("com.sun.xml.bind:jaxb-impl:2.3.3")
+    implementation("javax.xml.bind:jaxb-api:2.4.0-b180830.0359")
+    implementation("com.sun.xml.bind:jaxb-core:4.0.2")
+    implementation("com.sun.xml.bind:jaxb-impl:4.0.2")
 
     //Lombok
 // https://mvnrepository.com/artifact/org.projectlombok/lombok
@@ -50,9 +53,17 @@ dependencies {
     testImplementation("com.h2database:h2:2.2.224")
 
 
-
 }
+
 
 tasks.withType<Test> {
     useJUnitPlatform()
+    finalizedBy("jacocoTestReport")
+}
+
+tasks.named("jacocoTestReport", JacocoReport::class) {
+    dependsOn("test")
+    reports {
+        xml.required.set(true)
+    }
 }
