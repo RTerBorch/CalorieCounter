@@ -35,7 +35,7 @@ public class SecurityConfig {
 
         //Using Basic Auth just for simplicity for now.
         http.httpBasic(withDefaults());
-        http.csrf().disable();
+     //   http.csrf().disable();
 
         //Disable csrf if needed for testing, should never be disabled in production.
         //http.csrf(AbstractHttpConfigurer::disable);
