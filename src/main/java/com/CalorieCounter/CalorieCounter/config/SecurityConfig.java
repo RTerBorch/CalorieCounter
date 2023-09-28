@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
@@ -35,10 +36,10 @@ public class SecurityConfig {
 
         //Using Basic Auth just for simplicity for now.
         http.httpBasic(withDefaults());
-     //   http.csrf().disable();
+      //  http.csrf().disable();
 
         //Disable csrf if needed for testing, should never be disabled in production.
-        //http.csrf(AbstractHttpConfigurer::disable);
+        http.csrf(AbstractHttpConfigurer::disable);
 
         return http.build();
     }
