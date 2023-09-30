@@ -17,43 +17,37 @@ import java.util.List;
 @RestController
 @RequestMapping("/recipe") // Ta bort?
 public class RecipeController {
-    private Recept activeRecept;
+    private Recept activeRecipe;
     @Autowired
     LivsmedelRepository livsmedelRepository;
-
     @Autowired
     RecipeRepository recipeRepository;
-
     @Autowired
     AccountRepository accountRepository;
 
 
     @PostMapping("/newRecipe")
     public String newRecipe(@RequestParam String recipeName){
-        activeRecept = new Recept(recipeName,new ArrayList<>(),new ArrayList<>());
-        return "The recipe " + activeRecept.getNamn() + " was created.";
+        activeRecipe = new Recept(recipeName,new ArrayList<>(),new ArrayList<>());
+        return "The recipe " + activeRecipe.getNamn() + " was created.";
     }
     @PostMapping("/addIngredientToRecipe")
-    public String addIngredient(@RequestParam Long recipeId){
-        activeRecept.getIngredients().add(livsmedelRepository.findById(recipeId).orElseThrow());
-        return livsmedelRepository.findById(recipeId).orElseThrow().getNamn() + " was added to " + activeRecept.getNamn();
+    public String addIngredient(@RequestParam Long recipeID){
+        activeRecipe.getIngredients().add(livsmedelRepository.findById(recipeID).orElseThrow());
+        return livsmedelRepository.findById(recipeID).orElseThrow().getNamn() + " was added to " + activeRecipe.getNamn();
     }
 
-
-    /*
-    @PostMapping("/newRecipe")
-    public String newRecipe(@RequestParam String inputName) {
-        List<Livsmedel> livsmedelList = new ArrayList<>();
-        List<Account> accounts = new ArrayList<>();
-        String receptNamn = inputName.toLowerCase();
-
-        Recept recept = new Recept(receptNamn, livsmedelList, accounts);
-        System.out.println("recept " + recept.getNamn() + " " +receptNamn.toString());
-        recipeRepository.save(recept);
-        return "Recipe " + receptNamn + " created.";
+    @PostMapping("/addAccountToRecipe")
+    public String addAccountToRecipe(@RequestParam Long userID){
+        activeRecipe.getAccounts().add(accountRepository.findById(userID).orElseThrow());
+        return  accountRepository.findById(userID).orElseThrow().getUsername() + " was connected to " + activeRecipe.getNamn();
     }
 
-     */
+    @PostMapping("/saveRecipe")
+    public String saveRecipe(){
+        recipeRepository.save(activeRecipe);
+    return recipeRepository.findById(activeRecipe.getId()).orElseThrow().getNamn() + " recipe was saved.";
+    }
 
     @RequestMapping("/allRecipe")
     public List<Recept> allRecipe(){
