@@ -18,11 +18,6 @@ public class LivsmedelController {
         return ("<h1>Welcome</h1>");
     }
 
-    @RequestMapping("/test")
-    public String testing(){
-        return "Fungerar";
-    }
-
     @PostMapping("/searchLivsmedel")
     public List<Livsmedel> searchLivsmedel(@RequestParam String search){
     return livsmedelService.searchLivsmedel(search);

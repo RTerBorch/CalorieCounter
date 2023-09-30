@@ -53,25 +53,4 @@ public class RecipeController {
     public List<Recept> allRecipe(){
         return recipeRepository.findAll();
     }
-
-    @RequestMapping("/test")
-    public String test(){
-        return ("<h1>Welcome to recipe</h1>");
-    }
-
-    @RequestMapping("/addItem")
-    public void addItem(@RequestParam Long livsmedelId, @RequestParam String inputName) {
-
-        Recept recipe = recipeRepository.findByNamn(inputName.toLowerCase())
-                .orElseThrow();
-
-        Livsmedel livsmedel = livsmedelRepository.findById(livsmedelId)
-                .orElseThrow();
-
-        recipe.getIngredients().add(livsmedel);
-
-        recipeRepository.save(recipe);
-    }
-
-
 }
