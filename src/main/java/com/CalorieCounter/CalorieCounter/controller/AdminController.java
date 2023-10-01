@@ -32,7 +32,7 @@ public class AdminController {
         return "user added";
     }
 
-    @RequestMapping("/updateDB")
+    @PostMapping("/updateDB")
     public String updateDatabase() {
         livsmedelService.UpdateDB(false);
         return "Database updated successfully.";

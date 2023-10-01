@@ -23,8 +23,6 @@ public class Account {
     @ManyToMany
     private List<Recept> receptList;
 
-
-
     public Account(Long id, String username, String password, String role) {
         this.id = id;
         this.username = username;
