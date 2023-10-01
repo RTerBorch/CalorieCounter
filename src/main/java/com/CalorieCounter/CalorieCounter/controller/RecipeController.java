@@ -7,6 +7,7 @@ import com.CalorieCounter.CalorieCounter.repository.AccountRepository;
 import com.CalorieCounter.CalorieCounter.repository.LivsmedelRepository;
 import com.CalorieCounter.CalorieCounter.repository.RecipeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
@@ -27,11 +28,15 @@ public class RecipeController {
 
 
     @PostMapping("/newRecipe")
-    public String newRecipe(@RequestParam String recipeName) {
-        activeRecipe = new Recept(recipeName, new ArrayList<Livsmedel>(), new ArrayList<Account>());
-        return "The recipe " + activeRecipe.getNamn() + " was created.";
+    public String newRecipe(@RequestParam String recipeName, Principal principal) {
+        Optional<Account> optionalAccount = accountRepository.findByUsername(principal.getName());
+        if (optionalAccount.isEmpty()) {
+            return "redirect:/error/404"; // Omdirigera till 404-felvyn
+        }
+        Account account = optionalAccount.get();
+        activeRecipe = new Recept(recipeName, new ArrayList<Livsmedel>(), new ArrayList<Account>(),account.getUsername());
+        return "The recipe " + activeRecipe.getNamn() + " was created by " + account.getUsername();
     }
-
     @PostMapping("/selectRecipe")
     public String selectRecipe(@RequestParam Long recipeID) {
         activeRecipe = recipeRepository.findById(recipeID).orElseThrow();
@@ -87,11 +92,7 @@ public class RecipeController {
         return recipeRepository.findAll();
     }
 
-    @RequestMapping(value = "/username", method = RequestMethod.GET)
-    @ResponseBody
-    public String currentUserName(Principal principal) {
-        return principal.getName();
-    }
+
 
 
 }
