@@ -1,6 +1,7 @@
 -- Account Inserts
-INSERT INTO Account (id, password, role, username) VALUES (1, 'password1','ADMIN','testUser1');
-INSERT INTO Account (id, password, role, username) VALUES (2, 'password2','USER','testUser2');
+INSERT INTO Account (id, password, role, username) VALUES (1, '$2a$10$nhEpjymRAFsvpoimCZ92BeQBHSwk01FiYUFPal.vbmMtBjr/1MODO','ADMIN','admin');
+INSERT INTO Account (id, password, role, username) VALUES (2, '$2a$10$WYbfVpShvv0WHspIisedI.FVJHeQ0JuJhGRa778u/jzMuvcqoD3B6','USER','user');
+
 
 -- Recipe Inserts
 INSERT INTO recept (id, namn) VALUES (1,'lasagne');
