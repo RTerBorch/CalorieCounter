@@ -15,7 +15,6 @@ public class Livsmedel {
 
     @Id
     private Long id;
-
     private String namn;
     private int viktGram;
 

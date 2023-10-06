@@ -8,21 +8,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/livsmedel")
 public class LivsmedelController {
 
     @Autowired
     private LivsmedelService livsmedelService;
 
-    @GetMapping("/")
-    public String home(){
-        return ("<h1>Welcome</h1>");
-    }
 
-    @RequestMapping("/test")
-    public String testing(){
-        return "Fungerar";
-    }
-
+   //TODO if there is no match, return no matches found.
     @PostMapping("/searchLivsmedel")
     public List<Livsmedel> searchLivsmedel(@RequestParam String search){
     return livsmedelService.searchLivsmedel(search);

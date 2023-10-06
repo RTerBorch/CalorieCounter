@@ -29,6 +29,7 @@ public class SecurityConfig {
         http.authorizeHttpRequests(r -> r
                 //.requestMatchers("/error").permitAll()
                 .requestMatchers("/").hasAnyRole("ADMIN", "USER")
+                .requestMatchers("/livsmedel/**").hasAnyRole("ADMIN", "USER")
                 .requestMatchers("/recipe/**").hasAnyRole("ADMIN", "USER")
                 .requestMatchers("/admin/**").hasRole("ADMIN")
         );

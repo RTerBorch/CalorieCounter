@@ -17,6 +17,7 @@ public class Recept {
     @GeneratedValue
     private Long id;
     private String namn;
+    private String createdBy;
 
     @ManyToMany
     private List<Livsmedel> ingredients;
@@ -25,10 +26,11 @@ public class Recept {
     @JsonIgnore
     private List<Account> accounts;
 
-    public Recept(String namn, List<Livsmedel> ingredients, List<Account> accounts) {
+    public Recept(String namn, List<Livsmedel> ingredients, List<Account> accounts, String createdBy) {
         this.namn = namn;
         this.ingredients = ingredients;
         this.accounts = accounts;
+        this.createdBy = createdBy;
     }
 
     public Recept() {}

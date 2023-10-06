@@ -53,6 +53,11 @@ dependencies {
     testImplementation("com.h2database:h2:2.2.224")
 
 
+    // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+    testImplementation("io.rest-assured:rest-assured:5.3.2")
+
+
+
 }
 
 

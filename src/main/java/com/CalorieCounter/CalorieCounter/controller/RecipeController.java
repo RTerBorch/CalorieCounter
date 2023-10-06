@@ -7,61 +7,92 @@ import com.CalorieCounter.CalorieCounter.repository.AccountRepository;
 import com.CalorieCounter.CalorieCounter.repository.LivsmedelRepository;
 import com.CalorieCounter.CalorieCounter.repository.RecipeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
-@RequestMapping("/recipe") // Ta bort?
+@RequestMapping("/recipe")
 public class RecipeController {
+    private Recept activeRecipe;
     @Autowired
     LivsmedelRepository livsmedelRepository;
-
     @Autowired
     RecipeRepository recipeRepository;
-
     @Autowired
     AccountRepository accountRepository;
 
-    @PostMapping("/newRecipe")
-    public String newRecipe(@RequestParam String inputName) {
-        List<Livsmedel> livsmedelList = new ArrayList<>();
-        List<Account> accounts = new ArrayList<>();
-        String receptNamn = inputName.toLowerCase();
 
-        Recept recept = new Recept(receptNamn, livsmedelList, accounts);
-        System.out.println("recept " + recept.getNamn() + " " +receptNamn.toString());
-        recipeRepository.save(recept);
-        return "Recipe " + receptNamn + " created.";
+    @PostMapping("/newRecipe")
+    public String newRecipe(@RequestParam String recipeName, Principal principal) {
+        Optional<Account> optionalAccount = accountRepository.findByUsername(principal.getName());
+        if (optionalAccount.isEmpty()) {
+            return "redirect:/error/404"; // Omdirigera till 404-felvyn
+        }
+        Account account = optionalAccount.get();
+        activeRecipe = new Recept(recipeName, new ArrayList<Livsmedel>(), new ArrayList<Account>(),account.getUsername());
+        return "The recipe " + activeRecipe.getNamn() + " was created by " + account.getUsername();
+    }
+    @PostMapping("/selectRecipe")
+    public String selectRecipe(@RequestParam Long recipeID) {
+        activeRecipe = recipeRepository.findById(recipeID).orElseThrow();
+        return "Selected " + activeRecipe.getNamn();
     }
 
-    @RequestMapping("/allRecipe")
-    public List<Recept> allRecipe(){
+    @PostMapping("/activeRecipe")
+    public String activeRecipe() {
+        if (activeRecipe != null) {
+            return activeRecipe.getNamn() + "is the active recipe.";
+        } else return "No active recipe.";
+
+    }
+
+    @PostMapping("/setActiveRecipe")
+    public String setActiveRecipe(@RequestParam Long recipeId) {
+        activeRecipe = recipeRepository.findById(recipeId).orElseThrow();
+        return activeRecipe.getNamn() + " is the activeRecipe";
+    }
+
+    @PostMapping("/removeIngredientFromRecipe")
+    public String removeIngredient(@RequestParam Long livsmedelID) {
+        activeRecipe.getIngredients().remove(livsmedelRepository.findById(livsmedelID).orElseThrow());
+        return livsmedelRepository.findById(livsmedelID).orElseThrow().getNamn() + " was removed from " + activeRecipe.getNamn();
+    }
+
+    @PostMapping("/addIngredientToRecipe")
+    public String addIngredient(@RequestParam Long livsmedelID) {
+        Optional<Livsmedel> livsmedelOptional = livsmedelRepository.findById(livsmedelID);
+        if (livsmedelOptional.isPresent()) {
+            Livsmedel livsmedel = livsmedelOptional.get();
+            activeRecipe.getIngredients().add(livsmedel);
+            return livsmedel.getNamn() + " was added to " + activeRecipe.getNamn();
+        } else {
+            return "Product not found.";
+        }
+    }
+
+    @PostMapping("/addAccountToRecipe")
+    public String addAccountToRecipe(@RequestParam Long userID) {
+        activeRecipe.getAccounts().add(accountRepository.findById(userID).orElseThrow());
+        return accountRepository.findById(userID).orElseThrow().getUsername() + " was connected to " + activeRecipe.getNamn();
+    }
+
+    @PostMapping("/saveRecipe")
+    public String saveRecipe() {
+        recipeRepository.save(activeRecipe);
+        return recipeRepository.findById(activeRecipe.getId()).orElseThrow().getNamn() + " recipe was saved.";
+    }
+
+    @PostMapping("/allRecipe")
+    public List<Recept> allRecipe() {
         return recipeRepository.findAll();
     }
 
-    @RequestMapping("/test")
-    public String test(){
-        return ("<h1>Welcome to recipe</h1>");
-    }
 
-    @RequestMapping("/addItem")
-    public void addItem(@RequestParam Long livsmedelId, @RequestParam String inputName) {
-
-        Recept recipe = recipeRepository.findByNamn(inputName.toLowerCase())
-                .orElseThrow();
-
-        Livsmedel livsmedel = livsmedelRepository.findById(livsmedelId)
-                .orElseThrow();
-
-        recipe.getIngredients().add(livsmedel);
-
-        recipeRepository.save(recipe);
-    }
 
 
 }
