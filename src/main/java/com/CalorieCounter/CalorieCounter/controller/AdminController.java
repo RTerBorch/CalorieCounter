@@ -17,6 +17,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/admin")
 public class AdminController {
+
     @Autowired
     LivsmedelRepository livsmedelRepository;
 
@@ -25,7 +26,6 @@ public class AdminController {
 
     @Autowired
     private LivsmedelService livsmedelService;
-
 
     @PostMapping("/addAccount")
     public String addUser(){

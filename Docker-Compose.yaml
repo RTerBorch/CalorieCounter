@@ -1,0 +1,68 @@
+version: "3.8"
+
+services:
+  database:
+    image: mysql:latest
+    container_name: mysql-db
+    env_file:  .env
+    environment:
+      MYSQL_DATABASE: '${MYSQL_DATABASE}'
+      MYSQL_PASSWORD: '${MYSQL_PASSWORD}'
+      MYSQL_ROOT_PASSWORD: '${MYSQL_ROOT_PASSWORD}'
+      MYSQL_USER: '${MYSQL_USER}'
+
+    healthcheck:
+      test: [ "CMD-SHELL", "exit" ]
+      interval: 20s # kommer slänga första health_check efter 20 sec, kan jag anv cmd shell i den -> exit cmd
+      timeout: 30s
+
+    ports:
+      - 3307:3306
+    volumes:
+      - db-data:/var/lib/mysql
+
+    networks:
+      - sprint-network
+
+  calorie-counter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      database:
+        condition: service_healthy # kommer köras såfort vi får godkänd health_check från db
+    container_name: calorie-counter
+    ports:
+      - "8085:8080"
+    environment:
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_HOST=mysql-db:3306/CalorieBank
+    networks:
+      - sprint-network
+
+  phpmyadmin:
+    depends_on:
+      - database
+    image: phpmyadmin/phpmyadmin
+    restart: unless-stopped
+    ports:
+      - 8081:80
+    env_file: .env
+    environment:
+      PMA_HOST: database
+      MYSQL_ROOT_PASSWORD: '${MYSQL_ROOT_PASSWORD}'
+    networks:
+      - sprint-network
+
+volumes:
+    db-data:
+
+networks:
+    sprint-network:
+      driver: bridge
+
+
+
+
+
