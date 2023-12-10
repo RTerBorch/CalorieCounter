@@ -12,9 +12,10 @@ services:
       MYSQL_USER: '${MYSQL_USER}'
 
     healthcheck:
-      test: [ "CMD-SHELL", "exit" ]
-      interval: 20s # kommer slänga första health_check efter 20 sec, kan jag anv cmd shell i den -> exit cmd
-      timeout: 30s
+      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
+      interval: 10s
+      timeout: 5s
+      retries: 3
 
     ports:
       - 3307:3306
@@ -38,6 +39,10 @@ services:
       - MYSQL_USER=${MYSQL_USER}
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
       - MYSQL_HOST=mysql-db:3306/CalorieBank
+      - SEC_ADMIN_USERNAME=${SEC_ADMIN_USERNAME}
+      - SEC_ADMIN_PASSWORD_HASH=${SEC_ADMIN_PASSWORD_HASH}
+      - SEC_USERNAME=${SEC_USERNAME}
+      - SEC_PASSWORD_HASH=${SEC_PASSWORD_HASH}
     networks:
       - sprint-network
 
